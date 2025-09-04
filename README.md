@@ -1,2 +1,2 @@
 # Strukturinis2025
-Siandien yra ketvyrtadenis
+Siandien yra ketvirtadienis

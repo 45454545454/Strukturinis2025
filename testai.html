@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP | Medecinos portalas</title>
+  <link href="https://fonts.googleapis.com/css?family=Bakbak+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ADLaM+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="testai.css">
+</head>
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <div class="desktop-navbar fixed-top shadow-sm custom-navbar">
+      <div class="container d-flex justify-content-between align-items-center h-100 lvl1">
+        <div class="d-flex align-items-center gap-3">
+          <img src="/MAIN/images/logo 1.png" class="nav-logo" alt="Medicinos portalas logotipas">
+          <span class="nav-title">MEDICINOS PORTALAS</span>
+        </div>
+        <ul class="nav gap-4 nav-center-desktop">
+          <li><a class="nav-link" href="/MAIN/index.html#pagrindinis">Pagrindinis</a></li>
+          <li><a class="nav-link" href="/TEORIJA/teorija.html">Teorija</a></li>
+          <li><a class="nav-link active-nav" href="/TESTAI/testai.html">Testai</a></li>
+          <li><a class="nav-link" href="/DUK/duk.html">D.U.K</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="/LOGIN/login.html" class="login-btn">Login/Register</a>
+          <button class="settings-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#settingsDrawer" aria-controls="settingsDrawer">
+            <img src="/MAIN/images/nustat.png" class="settings-icon" alt="Nustatymai">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== BURGER ===== -->
+    <nav class="mobile-navbar fixed-top shadow-sm custom-navbar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-3">
+          <img src="/MAIN/images/logo 1.png" class="nav-logo" alt="Medicinos portalas logotipas">
+          <span class="nav-title">MEDICINOS PORTALAS</span>
+        </div>
+
+        <button class="navbar-toggler border-0" id="burgerToggle" type="button" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="burger-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Perjungti meniu</span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="/MAIN/index.html#pagrindinis" class="m-item">Pagrindinis</a>
+      <a href="/TEORIJA/teorija.html" class="m-item">Teorija</a>
+      <a href="/TESTAI/testai.html" class="m-item active-nav">Testai</a>
+      <a href="/DUK/duk.html" class="m-item">D.U.K</a>
+      <a href="/LOGIN/login.html" class="m-item login special">Login/Register</a>
+      <button type="button" class="m-item settings" data-bs-toggle="offcanvas" data-bs-target="#settingsDrawer" aria-controls="settingsDrawer">Nustatymai</button>
+    </div>
+  </header>
+
+  <main class="py-5 mt-5">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+        <div>
+          <p class="section-kicker mb-1">Testai</p>
+          <h1 class="section-title mb-0">Pasirinkite tema ir pradekite</h1>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="tab-content" id="testaiTabsContent">
+            <div class="tab-pane fade show active" id="chirurgija" role="tabpanel">
+              <div class="card border-brand shadow-sm tab-card">
+                <div class="row g-0">
+                  <div class="col-md-5 d-flex align-items-center justify-content-center p-4">
+                    <img src="/TESTAI/images/chir.png" class="img-fluid rounded" alt="Chirurgija">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h2 class="card-title">Chirurgija</h2>
+                      <p class="card-text">Testas sudarytas iš <span class="highlight">50 klausimų</span> apie „Medecinos portalas“ chirurgijos teoriją. Kiekvienas klausimas patikrins jūsų žinias apie pagrindines sąvokas.</p>
+                      <p class="card-text">Prieš pradėdami testą turite užsiregistruoti.</p>
+                      <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="btn btn-brand">Pradėti</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="radiologija" role="tabpanel">
+              <div class="card border-brand shadow-sm tab-card">
+                <div class="row g-0">
+                  <div class="col-md-5 d-flex align-items-center justify-content-center p-4">
+                    <img src="/TESTAI/images/rad.png" class="img-fluid rounded" alt="Radiologija">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h2 class="card-title">Radiologija</h2>
+                      <p class="card-text">Testas sudarytas iš <span class="highlight">50 klausimų</span> apie „Medecinos portalas“ radiologijos teoriją. Kiekvienas klausimas patikrins jūsų žinias apie pagrindines sąvokas.</p>
+                      <p class="card-text">Prieš pradėdami testą turite užsiregistruoti.</p>
+                      <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="btn btn-brand">Pradėti</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="anestezija" role="tabpanel">
+              <div class="card border-brand shadow-sm tab-card">
+                <div class="row g-0">
+                  <div class="col-md-5 d-flex align-items-center justify-content-center p-4">
+                    <img src="/TESTAI/images/anest.png" class="img-fluid rounded" alt="Anestezija">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h2 class="card-title">Anestezija</h2>
+                      <p class="card-text">Testas sudarytas iš <span class="highlight">50 klausimų</span> apie „Medecinos portalas“ anesteziologijos teoriją. Kiekvienas klausimas patikrins jūsų žinias apie pagrindines sąvokas.</p>
+                      <p class="card-text">Prieš pradėdami testą turite užsiregistruoti.</p>
+                      <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="btn btn-brand">Pradėti</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="kardiologija" role="tabpanel">
+              <div class="card border-brand shadow-sm tab-card">
+                <div class="row g-0">
+                  <div class="col-md-5 d-flex align-items-center justify-content-center p-4">
+                    <img src="/TESTAI/images/kar.png" class="img-fluid rounded" alt="Kardiologija">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h2 class="card-title">Kardiologija</h2>
+                      <p class="card-text">Testas sudarytas iš <span class="highlight">50 klausimų</span> apie „Medecinos portalas“ kardiologijos teoriją. Kiekvienas klausimas patikrins jūsų žinias apie pagrindines sąvokas.</p>
+                      <p class="card-text">Prieš pradėdami testą turite užsiregistruoti.</p>
+                      <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="btn btn-brand">Pradėti</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="ortopedija" role="tabpanel">
+              <div class="card border-brand shadow-sm tab-card">
+                <div class="row g-0">
+                  <div class="col-md-5 d-flex align-items-center justify-content-center p-4">
+                    <img src="/TESTAI/images/orto.png" class="img-fluid rounded" alt="Ortopedija">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h2 class="card-title">Ortopedija</h2>
+                      <p class="card-text">Testas sudarytas iš <span class="highlight">50 klausimų</span> apie „Medecinos portalas“ ortopedijos teoriją. Kiekvienas klausimas patikrins jūsų žinias apie pagrindines sąvokas.</p>
+                      <p class="card-text">Prieš pradėdami testą turite užsiregistruoti.</p>
+                      <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="btn btn-brand">Pradėti</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="patologija" role="tabpanel">
+              <div class="card border-brand shadow-sm tab-card">
+                <div class="row g-0">
+                  <div class="col-md-5 d-flex align-items-center justify-content-center p-4">
+                    <img src="/TESTAI/images/pata.png" class="img-fluid rounded" alt="Patologija">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h2 class="card-title">Patologija</h2>
+                      <p class="card-text">Testas sudarytas iš <span class="highlight">50 klausimų</span> apie „Medecinos portalas“ patologijos teoriją. Kiekvienas klausimas patikrins jūsų žinias apie pagrindines sąvokas.</p>
+                      <p class="card-text">Prieš pradėdami testą turite užsiregistruoti.</p>
+                      <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="btn btn-brand">Pradėti</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="psichiatrija" role="tabpanel">
+              <div class="card border-brand shadow-sm tab-card">
+                <div class="row g-0">
+                  <div class="col-md-5 d-flex align-items-center justify-content-center p-4">
+                    <img src="/TESTAI/images/psih.png" class="img-fluid rounded" alt="Psichiatrija">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h2 class="card-title">Psichiatrija</h2>
+                      <p class="card-text">Testas sudarytas iš <span class="highlight">50 klausimų</span> apie „Medecinos portalas“ psichiatrijos teoriją. Kiekvienas klausimas patikrins jūsų žinias apie pagrindines sąvokas.</p>
+                      <p class="card-text">Prieš pradėdami testą turite užsiregistruoti.</p>
+                      <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="btn btn-brand">Pradėti</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="akuserija" role="tabpanel">
+              <div class="card border-brand shadow-sm tab-card">
+                <div class="row g-0">
+                  <div class="col-md-5 d-flex align-items-center justify-content-center p-4">
+                    <img src="/TESTAI/images/okus.png" class="img-fluid rounded" alt="Akušerija">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h2 class="card-title">Akušerija</h2>
+                      <p class="card-text">Testas sudarytas iš <span class="highlight">50 klausimų</span> apie „Medecinos portalas“ akušerijos teoriją. Kiekvienas klausimas patikrins jūsų žinias apie pagrindines sąvokas.</p>
+                      <p class="card-text">Prieš pradėdami testą turite užsiregistruoti.</p>
+                      <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="btn btn-brand">Pradėti</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card border-brand shadow-sm sticky-top side-card">
+            <div class="card-body">
+              <p class="section-kicker text-uppercase mb-2">Testai</p>
+              <div class="decor-line mb-3"></div>
+              <div class="nav flex-column nav-pills gap-2" id="testaiTabs" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#chirurgija" role="tab" aria-controls="chirurgija" aria-selected="true" data-tab-target="chirurgija">Chirurgija</button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#radiologija" role="tab" aria-controls="radiologija" aria-selected="false" data-tab-target="radiologija">Radiologija</button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#anestezija" role="tab" aria-controls="anestezija" aria-selected="false" data-tab-target="anestezija">Anesteziologija</button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#kardiologija" role="tab" aria-controls="kardiologija" aria-selected="false" data-tab-target="kardiologija">Kardiologija</button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#ortopedija" role="tab" aria-controls="ortopedija" aria-selected="false" data-tab-target="ortopedija">Ortopedija</button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#patologija" role="tab" aria-controls="patologija" aria-selected="false" data-tab-target="patologija">Patologija</button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#psichiatrija" role="tab" aria-controls="psichiatrija" aria-selected="false" data-tab-target="psichiatrija">Psichiatrija</button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#akuserija" role="tab" aria-controls="akuserija" aria-selected="false" data-tab-target="akuserija">Akušerija</button>
+              </div>
+              <div class="decor-line my-3"></div>
+              <p class="small text-muted mb-2">Ko nors trūksta? Užpildykite apklausą, ir mes patobulinsime mūsų svetainę.</p>
+              <a href="https://forms.gle/ux9esdWZxLxSqGU38" class="btn btn-outline-brand w-100">Anketa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-6">
+          <div class="card border-brand shadow-sm h-100 info-card">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
+              <img src="/images/logo 1.png" class="mb-3 info-logo" alt="logo">
+              <h5 class="fw-bold text-brand">Netrukus...</h5>
+              <p class="mb-0 text-muted">Kol kas galite atlikti kitą testą.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-brand shadow-sm h-100 info-card">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
+              <img src="/images/logo 1.png" class="mb-3 info-logo" alt="logo">
+              <h5 class="fw-bold text-brand">Netrukus...</h5>
+              <p class="mb-0 text-muted">Kol kas galite atlikti kitą testą.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-5 py-4 bg-white shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <div class="d-flex align-items-center gap-3">
+        <img src="/MAIN/images/logo 1.png" alt="Logo" class="brand-logo">
+        <div>
+          <div class="fw-bold main-title text-uppercase">Medecinos portalas</div>
+          <small class="text-muted">© 2025 Medecinos Portalas</small>
+        </div>
+      </div>
+      <div class="text-muted small">Sveiki atvykę į mūsų testų erdvę</div>
+    </div>
+  </footer>
+
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="settingsDrawer" aria-labelledby="settingsDrawerLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="settingsDrawerLabel">Nustatymai</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p class="mb-0">Netrukus</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>

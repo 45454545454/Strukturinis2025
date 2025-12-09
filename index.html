@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP | Medicinos portalas</title>
+  <link href="https://fonts.googleapis.com/css?family=Bakbak+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ADLaM+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <div class="desktop-navbar fixed-top shadow-sm custom-navbar">
+      <div class="container d-flex justify-content-between align-items-center h-100 lvl1">
+        <div class="d-flex align-items-center gap-3">
+          <img src="./images/logo 1.png" class="nav-logo" alt="Medicinos portalas logotipas">
+          <span class="nav-title">MEDICINOS PORTALAS</span>
+        </div>
+        <ul class="nav gap-4 nav-center-desktop">
+          <li><a class="nav-link active-nav" href="/MAIN/index.html#pagrindinis">Pagrindinis</a></li>
+          <li><a class="nav-link" href="/TEORIJA/teorija.html">Teorija</a></li>
+          <li><a class="nav-link" href="/TESTAI/testai.html">Testai</a></li>
+          <li><a class="nav-link" href="/DUK/duk.html">D.U.K</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="/LOGIN/login.html" class="login-btn">Login/Register</a>
+          <button class="settings-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#settingsDrawer" aria-controls="settingsDrawer">
+            <img src="./images/nustat.png" class="settings-icon" alt="Nustatymai">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== BURGER ===== -->
+    <nav class="mobile-navbar fixed-top shadow-sm custom-navbar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-3">
+          <img src="./images/logo 1.png" class="nav-logo" alt="Medicinos portalas logotipas">
+          <span class="nav-title">MEDICINOS PORTALAS</span>
+        </div>
+
+        <button class="navbar-toggler border-0" id="burgerToggle" type="button" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="burger-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Perjungti meniu</span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="/MAIN/index.html#pagrindinis" class="m-item">Pagrindinis</a>
+      <a href="/TEORIJA/teorija.html" class="m-item">Teorija</a>
+      <a href="/TESTAI/testai.html" class="m-item">Testai</a>
+      <a href="/DUK/duk.html" class="m-item">D.U.K</a>
+      <a href="/LOGIN/login.html" class="m-item login special">Login/Register</a>
+      <button type="button" class="m-item settings" data-bs-toggle="offcanvas" data-bs-target="#settingsDrawer" aria-controls="settingsDrawer">Nustatymai</button>
+    </div>
+  </header>
+
+  <main class="pt-5" id="pagrindinis">
+    <section class="hero py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 text-lg-start text-center">
+            <p class="section-kicker mb-2">Medicinos portalas</p>
+            <h1 class="display-5 fw-bold section-title mb-3 hero-title">Viskas, ko reikia studijoms ir praktikai vienoje vietoje</h1>
+            <p class="lead text-muted mb-4 hero-subtitle">Patikimumas, kokybė ir dėmesys detalėms - tai trys principai, kuriais grindžiamas mūsų projektas.</p>
+            <div class="d-flex flex-wrap gap-3 justify-content-lg-start justify-content-center">
+              <a class="btn btn-brand btn-lg" href="/TEORIJA/teorija.html">Pradėti</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="content-with-aside">
+      <button class="aside-fab btn btn-brand d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#infoDrawer" aria-controls="infoDrawer">
+        Informacija
+      </button>
+      <section class="py-5" id="teorija">
+        <div class="container">
+          <div class="section-header text-center mb-4">
+            <div class="decor-line mx-auto"></div>
+            <p class="section-title h4 text-brand mt-2 mb-0">Teorija</p>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 border-brand shadow-none card-outline text-center">
+                <div class="card-body d-flex flex-column">
+                  <h6 class="card-title text-brand fw-bold">Kardiologija</h6>
+                  <p class="card-text text-muted small flex-grow-1">Kardiologijos skiltyje - pateikiama teorinė medžiaga apie širdies ir kraujagyslių sistemos sandarą ir funkcijas, pagrindines ligas bei diagnostikos ir gydymo metodus.</p>
+                  <img src="./images/kar.png" alt="Kardiologija" class="mb-3 icon-small mx-auto">
+                  <p class="small text-muted mb-3">Norėdami tęsti, spustelėkite kortelę.</p>
+                  <a href="/TEORIJA/teorija.html" class="btn btn-outline-brand mt-auto">Skaityti</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 border-brand shadow-none card-outline text-center">
+                <div class="card-body d-flex flex-column">
+                  <h6 class="card-title text-brand fw-bold">Patologija</h6>
+                  <p class="card-text text-muted small flex-grow-1">Patologijos skiltyje - pateikiama teorinė informacija apie ligų priežastis, vystymosi mechanizmus ir organų pokyčius.</p>
+                  <img src="./images/pata.png" alt="Patologija" class="mb-3 icon-small mx-auto">
+                  <p class="small text-muted mb-3">Norėdami tęsti, spustelėkite kortelę.</p>
+                  <a href="/TEORIJA/teorija.html" class="btn btn-outline-brand mt-auto">Skaityti</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 border-brand shadow-none card-outline text-center">
+                <div class="card-body d-flex flex-column">
+                  <h6 class="card-title text-brand fw-bold">Chirurgija</h6>
+                  <p class="card-text text-muted small flex-grow-1">Chirurgijos skiltyje - teorinė medžiaga apie chirurgines procedūras, operacijų tipus ir pasirengimą.</p>
+                  <img src="./images/chir.png" alt="Chirurgija" class="mb-3 icon-small mx-auto">
+                  <p class="small text-muted mb-3">Norėdami tęsti, spustelėkite kortelę.</p>
+                  <a href="/TEORIJA/teorija.html" class="btn btn-outline-brand mt-auto">Skaityti</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 border-brand shadow-none card-outline text-center">
+                <div class="card-body d-flex flex-column">
+                  <h6 class="card-title text-brand fw-bold">Psichologija</h6>
+                  <p class="card-text text-muted small flex-grow-1">Psichologijos skiltyje - medžiaga apie emocijas, psichikos procesus ir jų poveikį kasdienybei.</p>
+                  <img src="./images/psih.png" alt="Psichologija" class="mb-3 icon-small mx-auto">
+                  <p class="small text-muted mb-3">Norėdami tęsti, spustelėkite kortelę.</p>
+                  <a href="/TEORIJA/teorija.html" class="btn btn-outline-brand mt-auto">Skaityti</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-outline-brand d-lg-none w-100 mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#infoDrawer" aria-controls="infoDrawer">
+            Informacija
+          </button>
+        </div>
+      </section>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="infoDrawer" aria-labelledby="infoDrawerLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="infoDrawerLabel">Informacija</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Uždaryti"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p class="small text-muted mb-3">
+      Šiame portale visa mokomoji medžiaga yra suskirstyta į dvi pagrindines dalis - teoriją ir testus, kad galėtum ne tik mokytis, bet ir realiai pasitikrinti savo žinias. Kiekviena sritis pateikta atskiromis kortelėmis, kad būtų lengva orientuotis ir pasirinkti tą kryptį, kuri šiuo metu yra aktualiausia.
+      <br><br>
+      Teorijos skiltyje pateikiama išsami ir struktūruota informacija apie pagrindines medicinos šakas: kardiologiją, patologiją, chirurgiją ir psichologiją. Kiekvienoje temoje rasi svarbiausias sąvokas, paaiškinimus, schemų aprašymus bei pagrindinius procesus, kurie leidžia geriau suprasti žmogaus organizmo veikimą, ligų priežastis ir gydymo principus.
+      <br><br>
+      Pasirinkęs bet kurią teorijos kortelę, pateksi į atskirą skyrių, kuriame galėsi nuosekliai gilinti žinias nuo pagrindų iki sudėtingesnių temų. Tai leidžia mokytis sava eiga, be skubėjimo ir perteklinės apkrovos.
+      <br><br>
+      Testų skiltyje tavęs laukia praktiniai žinių patikrinimai. Kiekvienai medicinos sričiai parengti atskiri testai, sudaryti iš 20 klausimų. Jie padeda ne tik pasitikrinti žinias, bet ir sustiprinti silpnesnes vietas prieš egzaminus ar atsiskaitymus.
+      <br><br>
+      „Medecinos Portalas“ sukurtas tam, kad mokymasis būtų aiškus, patogus ir naudingas tiek mokiniams, tiek studentams ar visiems, kurie domisi medicina.
+    </p>
+          <a href="/TEORIJA/teorija.html" class="btn btn-outline-brand w-100">Pradėti</a>
+        </div>
+      </div>
+
+      <section class="py-5" id="testai">
+        <div class="container">
+          <div class="section-header text-center mb-4">
+            <div class="decor-line mx-auto"></div>
+            <p class="section-title h4 text-brand mt-2 mb-0">Testai</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-12">
+              <div class="row g-3">
+                <div class="col-md-6 col-lg-3">
+                  <div class="card h-100 border-brand shadow-none card-outline text-center">
+                    <div class="card-body d-flex flex-column">
+                      <h6 class="card-title text-brand fw-bold">Kardiologija</h6>
+                      <p class="card-text text-muted small flex-grow-1">Šį testą sudaro 20 klausimų. Klausimai iš kardiologijos teorijos, perskaitykite prieš pradedant.</p>
+                      <img src="./images/kar.png" alt="Kardiologija" class="mb-3 icon-small mx-auto">
+                      <p class="small text-muted mb-3">Norėdami tęsti, spustelėkite kortelę.</p>
+                      <a href="/TESTAI/testai.html" class="btn btn-outline-brand mt-auto">Pradėti</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card h-100 border-brand shadow-none card-outline text-center">
+                    <div class="card-body d-flex flex-column">
+                      <h6 class="card-title text-brand fw-bold">Patologija</h6>
+                      <p class="card-text text-muted small flex-grow-1">Šį testą sudaro 20 klausimų. Klausimai iš patologijos teorijos, perskaitykite prieš pradedant.</p>
+                      <img src="./images/pata.png" alt="Patologija" class="mb-3 icon-small mx-auto">
+                      <p class="small text-muted mb-3">Norėdami tęsti, spustelėkite kortelę.</p>
+                      <a href="/TESTAI/testai.html" class="btn btn-outline-brand mt-auto">Pradėti</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card h-100 border-brand shadow-none card-outline text-center">
+                    <div class="card-body d-flex flex-column">
+                      <h6 class="card-title text-brand fw-bold">Chirurgija</h6>
+                      <p class="card-text text-muted small flex-grow-1">Šį testą sudaro 20 klausimų. Klausimai iš chirurgijos teorijos, perskaitykite prieš pradedant.</p>
+                      <img src="./images/chir.png" alt="Chirurgija" class="mb-3 icon-small mx-auto">
+                      <p class="small text-muted mb-3">Norėdami tęsti, spustelėkite kortelę.</p>
+                      <a href="/TESTAI/testai.html" class="btn btn-outline-brand mt-auto">Pradėti</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card h-100 border-brand shadow-none card-outline text-center">
+                    <div class="card-body d-flex flex-column">
+                      <h6 class="card-title text-brand fw-bold">Psichologija</h6>
+                      <p class="card-text text-muted small flex-grow-1">Šį testą sudaro 20 klausimų. Klausimai iš psichologijos teorijos, perskaitykite prieš pradedant.</p>
+                      <img src="./images/psih.png" alt="Psichologija" class="mb-3 icon-small mx-auto">
+                      <p class="small text-muted mb-3">Norėdami tęsti, spustelėkite kortelę.</p>
+                      <a href="/TESTAI/testai.html" class="btn btn-outline-brand mt-auto">Pradėti</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<aside class="card border-brand shadow-none card-outline tall-card text-center h-100 d-none d-lg-block teorija-aside">
+  <div class="card-body d-flex flex-column justify-content-center h-100">
+
+    <p class="section-title h5 text-brand mb-3">Informacija</p>
+
+    <p class="small text-muted mb-3">
+      Šiame portale visa mokomoji medžiaga yra suskirstyta į dvi pagrindines dalis - teoriją ir testus, kad galėtum ne tik mokytis, bet ir realiai pasitikrinti savo žinias. Kiekviena sritis pateikta atskiromis kortelėmis, kad būtų lengva orientuotis ir pasirinkti tą kryptį, kuri šiuo metu yra aktualiausia.
+      <br><br>
+      Teorijos skiltyje pateikiama išsami ir struktūruota informacija apie pagrindines medicinos šakas: kardiologiją, patologiją, chirurgiją ir psichologiją. Kiekvienoje temoje rasi svarbiausias sąvokas, paaiškinimus, schemų aprašymus bei pagrindinius procesus, kurie leidžia geriau suprasti žmogaus organizmo veikimą, ligų priežastis ir gydymo principus.
+      <br><br>
+      Pasirinkęs bet kurią teorijos kortelę, pateksi į atskirą skyrių, kuriame galėsi nuosekliai gilinti žinias nuo pagrindų iki sudėtingesnių temų. Tai leidžia mokytis sava eiga, be skubėjimo ir perteklinės apkrovos.
+      <br><br>
+      Testų skiltyje tavęs laukia praktiniai žinių patikrinimai. Kiekvienai medicinos sričiai parengti atskiri testai, sudaryti iš 20 klausimų. Jie padeda ne tik pasitikrinti žinias, bet ir sustiprinti silpnesnes vietas prieš egzaminus ar atsiskaitymus.
+      <br><br>
+      „Medecinos Portalas“ sukurtas tam, kad mokymasis būtų aiškus, patogus ir naudingas tiek mokiniams, tiek studentams ar visiems, kurie domisi medicina.
+    </p>
+
+    <a href="/TEORIJA/teorija.html" class="btn btn-outline-brand mt-2">Pradėti</a>
+
+  </div>
+</aside>
+
+    </div>
+
+    <section class="py-5 bg-white">
+      <div class="container text-center">
+        <h3 class="section-title h5 text-brand mb-2">Dekojame, kad lankotes mūsu svetaineje!</h3>
+        <p class="text-muted mb-1">Tikimės, kad pateikta informacija naudinga ir įdomi. Sekite naujienas, naudokitės testais ir atraskite daugiau žinių apie medicinos specialybes.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 bg-white shadow-sm mt-4">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <div class="d-flex align-items-center gap-3">
+        <img src="./images/logo 1.png" alt="Logotipas" class="brand-logo">
+        <div>
+          <div class="fw-bold main-title text-uppercase">Medicinos portalas</div>
+          <small class="text-muted">© 2025 Medicinos Portalas.</small>
+        </div>
+      </div>
+      <div class="text-muted small">Atraskite daugiau žinių su mūsų teorija ir testais.</div>
+    </div>
+  </footer>
+
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="settingsDrawer" aria-labelledby="settingsDrawerLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="settingsDrawerLabel">Nustatymai</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p class="mb-0">Netrukus čia atsiras personalizavimo nustatymai.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>
